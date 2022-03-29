@@ -22,4 +22,7 @@ describe("Calculadora Cadena 2", () => {
   it("Tomando en cuenta una cadena 1,13,4,15 debe retornar 33", () => {       
     expect(calcularCadena("1,13,4,15")).toEqual(33);
   });
+  it("Tomando en cuenta una cadena 1-3-5 con delimitador - debe retornar 9", () => {       
+    expect(calcularCadena("1-3-5","")).toEqual(9);
+  });
 });

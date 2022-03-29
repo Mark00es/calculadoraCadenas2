@@ -10,7 +10,11 @@ function calcularCadena(palabra){
     var resp = parseInt(palabra);
     if(palabra=="")
         return 0;      
-    resp = separarCadena(palabra,","); 
+    if(palabra.includes(","))
+        resp = separarCadena(palabra,","); 
+    else{if(palabra.includes("-"))
+        resp = separarCadena(palabra,"-");     
+    }
     return resp;        
 }
 
