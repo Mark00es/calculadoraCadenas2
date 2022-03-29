@@ -6,15 +6,17 @@ function separarCadena(palabra,delimitador){
             tot = tot + parseInt(resp[i]);
     return tot;
 }
-function calcularCadena(palabra){ 
+function calcularCadena(palabra,delimitador){ 
     var resp = parseInt(palabra);
     if(palabra=="")
         return 0;      
+    if(delimitador != "")
+        resp = separarCadena(palabra,delimitador);         
     if(palabra.includes(","))
         resp = separarCadena(palabra,","); 
     else{if(palabra.includes("-"))
         resp = separarCadena(palabra,"-");     
-    }
+    }           
     return resp;        
 }
 
