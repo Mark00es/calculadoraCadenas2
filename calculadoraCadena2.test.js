@@ -10,4 +10,7 @@ describe("Calculadora Cadena 2", () => {
   it("Tomando en cuenta una cadena 1,2 debe retornar 3", () => {       
     expect(calcularCadena("1,2")).toEqual(3);
   });
+  it("Tomando en cuenta una cadena 1,2,3 debe retornar 6", () => {       
+    expect(calcularCadena("1,2,3")).toEqual(6);
+  });
 });
